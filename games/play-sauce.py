@@ -39,7 +39,8 @@ def run(playwright: Playwright) -> None:
     logout_btn.click()
 
     login_btn = page.locator("#login-button")
-
+    
+    # test
     assert login_btn.is_visible(), "Login is not successfull!"
 
     # ---------------------
